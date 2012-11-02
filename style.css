@@ -1,0 +1,86 @@
+body {
+  background-color: #445;
+  font-family: chalkduster, Monotype Corsiva, Bradley Hand ITC, comic sans, handwriting, sans-serif;
+  color: #f0f0ee;
+}
+*{
+  -webkit-user-select: none;
+}
+
+h1{
+  margin: 0 0 20px;
+}
+
+#toolbox{
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1;
+}
+
+#graph{
+  position: absolute;
+  z-index: 100;
+}
+
+.proto{
+  margin-bottom: 10px;
+  cursor: -webkit-grab;
+  -webkit-user-select: none;
+}
+
+.ghost{
+  cursor: -webkit-grabbing;
+  -webkit-user-select: none;
+  -webkit-box-shadow: 4px 4px black;
+  -webkit-transform: rotate(5deg);
+}
+
+.box{
+  width: 150px;
+  border-radius: 10px;
+  border: 1px solid black;
+  border-top-width: 4px;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(105,105,119);
+}
+
+.band{
+  border-color: rgb(255, 238, 119);
+}
+.band.ghost{
+  border-color: rgba(255, 238, 119, .5);
+}
+
+.genre{
+  border-color: rgb(255, 152, 88);
+}
+.genre.ghost{
+  border-color: rgba(255, 152, 88, .5);
+}
+
+.album{
+  border-color: #6FCAA1;
+}
+
+.nodrop {
+  cursor: not-allowed;
+}
+
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+line{
+  stroke: #f0f0ee;
+  stroke-width: 2px;
+}
+#hint{
+  text-align: center;
+}
