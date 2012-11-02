@@ -139,6 +139,7 @@ define(['jquery', 'line', 'data', 'effin'], function($, Line, data) {
           var k, childData;
 
           if (type === 'genre') {
+
             k = RandomKey(data);
             childData = data[k];
             delete data[k];
